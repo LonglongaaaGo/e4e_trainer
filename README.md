@@ -2,7 +2,7 @@
 
 - Note: this project is from the paper
 ``Designing an Encoder for StyleGAN Image Manipulation (SIGGRAPH 2021)''
-- We just use it for training a style encoder. For more technique problems, please refer to e4e.
+- We just use it to train style encoders. For more technique problems, please refer to e4e.
 
 
 
