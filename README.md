@@ -51,7 +51,7 @@ To train the e4e encoder, make sure the paths to the required models, as well as
 
 #### **Training the e4e Encoder for the FACEMUG**
 ```
-python multi_train_pp.py
+python FACEMUG_encoder_trainer.py
 --dataset_type ffhq_encode
 --exp_dir new/experiment/directory
 --start_from_latent_avg
@@ -66,6 +66,7 @@ python multi_train_pp.py
 --batch_size 8
 --test_batch_size 4
 --test_workers 4
+--in_channel 26
 --save_training_data
 --keep_optimizer
 --multi_modal True
@@ -79,6 +80,34 @@ python multi_train_pp.py
 --semantic_test_root [semantic folder path for testing]
 --color_test_root [color folder path for testing]
 ```
+
+
+#### **Training the e4e Encoder for the visual style prompt restoration**
+```
+python Visual_prompt_trainer.py
+--dataset_type ffhq_encode
+--exp_dir new/experiment/directory
+--start_from_latent_avg
+--use_w_pool
+--w_discriminator_lambda 0.1
+--progressive_start 20000
+--id_lambda 0.5
+--val_interval 10000
+--max_steps 200000
+--stylegan_size 1024
+--workers 8
+--batch_size 8
+--test_batch_size 4
+--test_workers 4
+--in_channel 3
+--save_training_data
+--keep_optimizer
+--checkpoint_path [pre-trained FFHQ e4e encoder, please find it in the above pre-trained models]
+--img_path [image folder path]
+--img_test_path [image folder path for testing]
+```
+
+
 
 
 ## Acknowledgments
