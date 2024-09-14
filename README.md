@@ -49,7 +49,9 @@ By default, we assume that all auxiliary models are downloaded and saved to the 
 To train the e4e encoder, make sure the paths to the required models, as well as training and testing data is configured in `configs/path_configs.py` and `configs/data_configs.py`.
 
 
+
 #### **Training the e4e Encoder for the FACEMUG**
+For the data preparation, please refer to [FACEMUG](https://github.com/LonglongaaaGo/FACEMUG_trainer).
 ```
 python multi_train_pp.py
 --dataset_type ffhq_encode
