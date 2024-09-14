@@ -1,4 +1,7 @@
-# e4e training code for FACEMUG
+# e4e training code for
+- FACEMUG
+- Visual style prompt for restoration
+
 
 - Note: this project is from the paper
 ``Designing an Encoder for StyleGAN Image Manipulation (SIGGRAPH 2021)''
