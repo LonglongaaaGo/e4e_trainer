@@ -2,7 +2,7 @@
 
 - Note: this project is from the paper
 ``Designing an Encoder for StyleGAN Image Manipulation (SIGGRAPH 2021)''
-- We just use it for training a style encoder. For more technique problems, please refer to e4e.
+- We just use it to train style encoders. For more technique problems, please refer to e4e.
 
 
 
@@ -49,7 +49,9 @@ By default, we assume that all auxiliary models are downloaded and saved to the 
 To train the e4e encoder, make sure the paths to the required models, as well as training and testing data is configured in `configs/path_configs.py` and `configs/data_configs.py`.
 
 
+
 #### **Training the e4e Encoder for the FACEMUG**
+For the data preparation, please refer to [FACEMUG](https://github.com/LonglongaaaGo/FACEMUG_trainer).
 ```
 python FACEMUG_encoder_trainer.py
 --dataset_type ffhq_encode
