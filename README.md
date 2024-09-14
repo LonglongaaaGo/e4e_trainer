@@ -1,6 +1,4 @@
-# e4e training code for
-- FACEMUG
-- Visual style prompt for restoration
+# e4e training code for FACEMUG and visual style prompt restoration
 
 
 - Note: this project is from the paper
