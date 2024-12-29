@@ -1,4 +1,4 @@
-# e4e training code for FACEMUG and visual style prompt restoration
+# e4e training code for FACEMUG and [Visual Style Prompt Restoration](https://github.com/LonglongaaaGo/VSPBFR)
 
 
 - Note: this project is from the paper
@@ -85,7 +85,7 @@ python FACEMUG_encoder_trainer.py
 ```
 
 
-#### **Training the e4e Encoder for the visual style prompt restoration**
+#### **Training the e4e Encoder for the [Visual Style Prompt Restoration](https://github.com/LonglongaaaGo/VSPBFR)**
 ```
 python Visual_prompt_trainer.py
 --dataset_type ffhq_encode
